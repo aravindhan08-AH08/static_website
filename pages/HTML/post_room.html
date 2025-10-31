@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Room - Bachelor Life</title>
+    <link rel="stylesheet" href="../CSS/post_room.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-bachelor">Bachelor</span><span class="logo-life">Life</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/Index.html">Home</a>
+            <a href="../HTML/find_room.html">Find Rooms</a>
+            <a href="../HTML/post_room.html">Post Room</a>
+        </nav>
+        <div class="nav-right-group">
+            <a href="#" class="login-btn">Login</a>
+            <button class="hamburger-menu" aria-label="Menu">&#9776;</button>
+        </div>
+    </header>
+
+    <main class="post-room-container">
+        <div class="form-card">
+            
+            <div class="form-header">
+                <h1 class="form-title">List Your Room</h1>
+                <p class="form-subtitle">Help bachelors find their perfect accommodation</p>
+            </div>
+
+            <form action="#" method="POST" class="post-form">
+
+                <div class="form-section-title">Room Details</div>
+                <div class="form-grid">
+                    
+                    <div class="input-group">
+                        <label for="room-title">Room Title *</label>
+                        <input type="text" id="room-title" placeholder="e.g. Cozy Single Room in City Center" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="room-type">Room Type *</label>
+                        <select id="room-type" required>
+                            <option value="" disabled selected>Select room type</option>
+                            <option value="single">Single Room</option>
+                            <option value="shared">Shared Room</option>
+                            <option value="studio">Studio Apartment</option>
+                            <option value="1bhk">1 BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="monthly-rent">Monthly Rent (₹) *</label>
+                        <input type="number" id="monthly-rent" placeholder="15000" required min="1000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="location">Location *</label>
+                        <input type="text" id="location" placeholder="Area, City" required>
+                    </div>
+                </div>
+
+                <div class="input-group description-group">
+                    <label for="description">Description *</label>
+                    <textarea id="description" rows="4" placeholder="Describe your room, nearby amenities, transportation, etc." required></textarea>
+                </div>
+
+                <div class="form-section-title">Amenities</div>
+                <div class="amenities-grid">
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="wifi"> WiFi</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="ac"> AC</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="attached-bath"> Attached Bath</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="kitchen-access"> Kitchen Access</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="parking"> Parking</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="laundry"> Laundry</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="security"> Security</label>
+                    <label class="checkbox-container"><input type="checkbox" name="amenity" value="gym"> Gym</label>
+                </div>
+
+                <div class="bachelor-friendly-check">
+                    <label class="checkbox-container"><input type="checkbox" name="bachelor-friendly" value="true" checked> This property is bachelor-friendly</label>
+                </div>
+
+                <div class="form-section-title">Contact Information</div>
+                <div class="form-grid contact-grid">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <footer>
+                <div class="form-actions">
+                    <button type="button" class="btn-cancel">Cancel</button>
+                    <button type="submit" class="btn-submit">List Room</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+         
+    </footer>
+
+</body>
+</html>

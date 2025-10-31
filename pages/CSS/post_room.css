@@ -1,0 +1,271 @@
+/* === 1. Basic Setup & Variables === */
+:root {
+    --primary-blue: #007bff;
+    --dark-blue: #003366;
+    --success-green: #4CAF50;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --text-dark: #333;
+    --text-light: #666;
+    --border-color: #dee2e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* All element transitions for professional touch */
+a, .btn, button, input, select, textarea {
+    transition: all 0.3s ease-in-out;
+}
+
+/* === 2. Navigation Bar (From Homepage Style) === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--primary-blue);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.logo-bachelor { color: var(--white); }
+.logo-life { color: var(--white); }
+
+.nav-links { display: flex; }
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 20px;
+    font-weight: 500;
+}
+.navbar a:hover, .navbar .active-link { 
+    color: var(--success-green); 
+    font-weight: 600; /* active link-ஐ highlight செய்ய */
+}
+
+.nav-right-group { display: flex; align-items: center; gap: 15px; }
+.login-btn {
+    background-color: var(--primary-blue);
+    color: var(--white) !important;
+    padding: 8px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.login-btn:hover { background-color: var(--dark-blue); }
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+/* === 3. Post Room Main Form Layout === */
+.post-room-container {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-card {
+    background: var(--white);
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Header gradient-ஐ சரியாகக் காட்ட */
+}
+
+/* Form Header (வீடியோவில் உள்ள Gradient பகுதி) */
+.form-header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--success-green) 100%);
+    padding: 35px;
+    color: var(--white);
+}
+
+.form-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    font-size: 1.05em;
+    opacity: 0.9;
+}
+
+.post-form {
+    padding: 40px;
+}
+
+/* Input Fields Grid Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 சமமான நெடுவரிசைகள் */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.input-group input, 
+.input-group select,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    color: var(--text-dark);
+}
+.input-group input:focus, 
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.input-group textarea {
+    resize: vertical; /* செங்குத்தாக மட்டுமே மாற்ற அனுமதிக்கிறது */
+}
+
+/* Section Title Styling */
+.form-section-title {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Amenities Checkboxes */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 நெடுவரிசைகள் */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--text-dark);
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-blue); /* checkbox நிறத்தை மாற்றுகிறது */
+}
+
+.bachelor-friendly-check {
+    border: 1px solid var(--success-green);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(76, 175, 80, 0.05); /* லேசான பச்சை பின்னணி */
+    margin-bottom: 30px;
+}
+
+/* Form Actions (Buttons) */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-cancel, .btn-submit {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: var(--white);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+}
+.btn-cancel:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-submit {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+.btn-submit:hover {
+    background-color: var(--dark-blue);
+}
+
+/* === 4. Footer === */
+footer {
+    background-color: #e9ecef;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-top: 1px solid #dee2e6;
+}
+
+/* === 5. Mobile Responsiveness === */
+@media (max-width: 768px) {
+    .navbar { padding: 15px 15px; }
+    .nav-links { display: none; }
+    .hamburger-menu { display: block; }
+
+    .post-room-container { padding: 30px 10px; }
+    .post-form { padding: 20px; }
+
+    /* அனைத்து Grid-களையும் செங்குத்தாக (Vertically) அடுக்குதல் */
+    .form-grid, .amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .amenities-grid {
+        grid-template-columns: 1fr 1fr; /* மொபைலில் ஒரு வரிக்கு இரண்டு செக்பாக்ஸ்கள் */
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}
