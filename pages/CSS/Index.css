@@ -1,4 +1,3 @@
-/* === 1. Basic Setup & Variables === */
 :root {
     --primary-blue: #007bff;
     --dark-blue: #045aaf;
@@ -20,15 +19,13 @@ body {
     background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
-    overflow-x: hidden; /* கிடைமட்ட ஸ்க்ரோலைத் தடுக்கும் */
+    overflow-x: hidden; 
 }
 
-/* எல்லா உறுப்புகளுக்கும் மென்மையான Transition-ஐ அமைத்தல் */
 a, .btn, .card, input, select {
     transition: all 0.3s ease-in-out;
 }
 
-/* === 2. Navigation Bar === */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -67,7 +64,7 @@ a, .btn, .card, input, select {
     font-weight: 600;
 }
 .login-btn:hover {
-    background-color: var(--primary-blue); /* Hover: அடர் நீலமாக மாறுதல் */
+    background-color: var(--primary-blue); 
     color: var(--white);
 }
 
@@ -170,7 +167,7 @@ a, .btn, .card, input, select {
     font-weight: 600;
 }
 .search-btn:hover {
-    background-color: primary-blue; /* Hover */
+    background-color: var(--primary-blue); 
     transform: translateY(-1px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -213,7 +210,6 @@ a, .btn, .card, input, select {
     transform: scale(0.95);
     animation: cardEntrance 0.7s ease-out forwards;
 }
-/* Card Entrance Delay */
 .card:nth-child(1) { animation-delay: 1.6s; }
 .card:nth-child(2) { animation-delay: 1.8s; }
 .card:nth-child(3) { animation-delay: 2.0s; }
@@ -230,7 +226,7 @@ a, .btn, .card, input, select {
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.02); /* Hover: மேலே எழுந்து, லேசாகப் பெரிதாகும் */
+    transform: translateY(-10px) scale(1.02); 
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -248,7 +244,6 @@ a, .btn, .card, input, select {
     color: var(--text-light);
 }
 
-/* === 5. Advantage Section (Blue Background) === */
 .advantage-section {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -264,7 +259,7 @@ a, .btn, .card, input, select {
 
 .advantage-section p {
     font-size: 1.1em;
-    color: #a9c8f9; /* லேசான நீலம் */
+    color: #a9c8f9; 
     margin-bottom: 60px;
     max-width: 900px;
     margin-left: auto;
@@ -298,13 +293,12 @@ a, .btn, .card, input, select {
 }
 
 
-/* === 6. CTA Section === */
 .cta-section {
     padding: 100px 50px;
     text-align: center;
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
-    animation-delay: 2.3s; /* முந்தைய பிரிவுகள் முடிந்த பிறகு தோன்ற */
+    animation-delay: 2.3s; 
 }
 
 @keyframes fadeIn {
@@ -357,7 +351,6 @@ a, .btn, .card, input, select {
 }
 
 
-/* === 7. Footer === */
 footer {
     background-color: #e9ecef;
     padding: 15px;
