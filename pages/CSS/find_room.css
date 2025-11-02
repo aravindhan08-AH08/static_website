@@ -178,7 +178,6 @@ a {
 
 .budget-slider input[type="range"] {
     width: 100%;
-    -webkit-appearance: none;
     height: 8px;
     background: linear-gradient(to right, #2e59a7 50%, #e0e0e0 50%); /* Base color for the slider track */
     border-radius: 5px;
