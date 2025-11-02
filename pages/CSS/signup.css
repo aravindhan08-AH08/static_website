@@ -8,7 +8,7 @@ body {
   background: linear-gradient(to bottom right, #f5faff, #ecf6ff);
 }
 
-/* Navbar */
+
 header {
   background-color: #1e3a8a;
   color: #fff;
@@ -50,7 +50,7 @@ nav a {
   font-weight: 500;
 }
 
-/* Center Card */
+
 .container {
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ nav a {
   width: 100%;
   max-width: 420px;
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   text-align: center;
 }
@@ -84,7 +84,7 @@ nav a {
   margin-bottom: 24px;
 }
 
-/* Tabs */
+
 .tab-buttons {
   display: flex;
   border-radius: 10px;
@@ -109,7 +109,7 @@ nav a {
   color: #fff;
 }
 
-/* Inputs */
+
 input {
   width: 100%;
   padding: 10px;
