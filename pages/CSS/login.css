@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #cbd8ff;
+  background-color: var(--success-green);
 }
 
 .nav-links .login-btn {

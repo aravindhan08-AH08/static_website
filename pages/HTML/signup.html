@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../CSS/signup.css">
-  <title>Bachelor Life - Create Account</title>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <div class="logo-icon"></div>
-      Bachelor Life
-    </div>
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="../HTML/find_room.html">Find Rooms</a>
-      <a href="../HTML/post_room.html">Post Room</a>
-      <a href="../HTML/login.html" class="login-btn">Login</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <div class="form-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="home icon" />
-      <h2>Create Account</h2>
-      <p>Join Bachelor Life today</p>
-
-      <div class="tab-buttons">
-        <button class="tab active" onclick="switchTab('bachelor')">Bachelor</button>
-        <button class="tab" onclick="switchTab('owner')">Room Owner</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/signup.css" />
+    <title>Bachelor Life - Create Account</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo-icon"></div>
+        Bachelor Life
       </div>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="../HTML/find_room.html">Find Rooms</a>
+        <a href="../HTML/post_room.html">Post Room</a>
+        <a href="../HTML/login.html" class="login-btn">Login</a>
+      </nav>
+    </header>
 
-      <form id="form">
-        <input type="text" placeholder="Enter your full name" />
-        <input type="text" placeholder="Enter your phone number" />
-        <input type="email" placeholder="Enter your email" />
-        <input type="password" placeholder="Create a password" />
-        <button type="submit" class="btn-create">Create Account</button>
-      </form>
+    <div class="container">
+      <div class="form-card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+          alt="home icon"
+        />
+        <h2>Create Account</h2>
+        <p>Join Bachelor Life today</p>
 
-      <p class="signin-text">
-        Already have an account?
-        <a href="#">Sign in</a>
-      </p>
+        <div class="tab-buttons">
+          <button class="tab active">
+            Bachelor
+          </button>
+          <button class="tab" >Room Owner</button>
+        </div>
+
+        <form id="form">
+          <input type="text" placeholder="Enter your full name" />
+          <input type="text" placeholder="Enter your phone number" />
+          <input type="email" placeholder="Enter your email" />
+          <input type="password" placeholder="Create a password" />
+          <button type="submit" class="btn-create">Create Account</button>
+        </form>
+
+        <p class="signin-text">
+          Already have an account?
+          <a href="#">Sign in</a>
+        </p>
+      </div>
     </div>
-  </div>
-
-  <script>
-    // Simple JS to toggle tab visuals (no data change yet)
-    const tabs = document.querySelectorAll(".tab");
-    function switchTab(name) {
-      tabs.forEach(t => t.classList.remove("active"));
-      document.querySelector(`.tab[onclick=\"switchTab('${name}')\"]`).classList.add("active");
-    }
-  </script>
-</body>
+  </body>
 </html>

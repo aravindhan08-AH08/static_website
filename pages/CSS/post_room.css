@@ -244,27 +244,3 @@ footer {
     color: #6c757d;
     border-top: 1px solid #dee2e6;
 }
-
-
-@media (max-width: 768px) {
-    .navbar { padding: 15px 15px; }
-    .nav-links { display: none; }
-    .hamburger-menu { display: block; }
-
-    .post-room-container { padding: 30px 10px; }
-    .post-form { padding: 20px; }
-
-    
-    .form-grid, .amenities-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .amenities-grid {
-        grid-template-columns: 1fr 1fr; 
-    }
-
-    .form-actions {
-        flex-direction: column;
-    }
-}

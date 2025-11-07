@@ -85,31 +85,6 @@ nav a {
 }
 
 
-.tab-buttons {
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #e5e7eb;
-  margin-bottom: 20px;
-}
-
-.tab {
-  flex: 1;
-  padding: 10px 0;
-  font-weight: 500;
-  border: none;
-  background-color: #f1f5f9;
-  color: #475569;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.tab.active {
-  background-color: #2563eb;
-  color: #fff;
-}
-
-
 input {
   width: 100%;
   padding: 10px;
@@ -150,14 +125,4 @@ input:focus {
   color: #2563eb;
   text-decoration: none;
   font-weight: 500;
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 10px 20px;
-  }
-  .form-card {
-    margin: 0 16px;
-    padding: 20px;
-  }
 }
