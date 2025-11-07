@@ -1,122 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bachelor Life - Your Perfect Room</title>
-    <link rel="stylesheet" href="./pages/CSS/Index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./pages/CSS/Index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <header class="navbar">
-        <div class="logo">
-            <span class="logo-bachelor">Bachelor</span><span class="logo-life">Life</span>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="./pages/HTML/find_room.html">Find Rooms</a>
-            <a href="./pages/HTML/post_room.html">Post Room</a>
-        </nav>
-        <div class="nav-right-group">
-            <a href="./pages/HTML/login.html" class="login-btn">Login</a>
-        </div>
+      <div class="logo">
+        <span class="logo-bachelor">Bachelor</span
+        ><span class="logo-life">Life</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="/pages/HTML/find_room.html">Find Rooms</a>
+        <a href="/pages/HTML/post_room.html">Post Room</a>
+      </nav>
+      <div class="nav-right-group">
+        <a href="./pages/HTML/login.html" class="login-btn">Login</a>
+      </div>
     </header>
 
     <section class="hero-section">
-        <div class="hero-content">
-            <h1>Find Your Perfect Room, Live Your Best Life</h1>
-            <p>
-                Living the bachelor lifestyle means independence, growth, and endless possibilities. 
-                Connect with verified owners, discover bachelor-friendly accommodations, and join a 
-                community where you can learn, grow, and thrive on your own terms.
-            </p>
-            
-            <div class="search-box">
-                <div class="search-input-group">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" viewBox="0 0 256 367"><!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt --><path fill="#34A853" d="M70.585 271.865a371 371 0 0 1 28.911 42.642c7.374 13.982 10.448 23.463 15.837 40.31c3.305 9.308 6.292 12.086 12.714 12.086c6.998 0 10.173-4.726 12.626-12.035c5.094-15.91 9.091-28.052 15.397-39.525c12.374-22.15 27.75-41.833 42.858-60.75c4.09-5.354 30.534-36.545 42.439-61.156c0 0 14.632-27.035 14.632-64.792c0-35.318-14.43-59.813-14.43-59.813l-41.545 11.126l-25.23 66.451l-6.242 9.163l-1.248 1.66l-1.66 2.078l-2.914 3.319l-4.164 4.163l-22.467 18.304l-56.17 32.432z"/><path fill="#FBBC04" d="M12.612 188.892c13.709 31.313 40.145 58.839 58.031 82.995l95.001-112.534s-13.384 17.504-37.662 17.504c-27.043 0-48.89-21.595-48.89-48.825c0-18.673 11.234-31.501 11.234-31.501l-64.489 17.28z"/><path fill="#4285F4" d="M166.705 5.787c31.552 10.173 58.558 31.53 74.893 63.023l-75.925 90.478s11.234-13.06 11.234-31.617c0-27.864-23.463-48.68-48.81-48.68c-23.969 0-37.735 17.475-37.735 17.475v-57z"/><path fill="#1A73E8" d="M30.015 45.765C48.86 23.218 82.02 0 127.736 0c22.18 0 38.89 5.823 38.89 5.823L90.29 96.516H36.205z"/><path fill="#EA4335" d="M12.612 188.892S0 164.194 0 128.414c0-33.817 13.146-63.377 30.015-82.649l60.318 50.759z"/></svg>
-                    <input type="text" placeholder="Enter location" class="search-input">
-                </div>
-                
-                <div class="search-input-group">
-                    <i class="fas fa-bed icon-search"></i>
-                    <select class="search-input">
-                        <option>All Room Types</option>
-                        <option>Single Room</option>
-                        <option>Shared Room</option>
-                        <option>Bachelor's Room</option>
-                    </select>
-                </div>
-                
-                <div class="price-slider-container">
-                    <label for="price">Max: ₹29,000</label>
-                    <input type="range" id="price" min="10000" max="50000" value="29000" class="price-slider">
-                </div>
+      <div class="hero-content">
+        <h1>Find Your Perfect Room, Live Your Best Life</h1>
+        <p>
+          Living the bachelor lifestyle means independence, growth, and endless
+          possibilities. Connect with verified owners, discover
+          bachelor-friendly accommodations, and join a community where you can
+          learn, grow, and thrive on your own terms.
+        </p>
 
-                <button class="search-btn"><i class="fas fa-search"></i> Search Rooms</button>
-            </div>
+        <div class="search-box">
+          <div class="search-input-group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="26"
+              viewBox="0 0 256 367"
+            >
+              <path
+                fill="#34A853"
+                d="M70.585 271.865a371 371 0 0 1 28.911 42.642c7.374 13.982 10.448 23.463 15.837 40.31c3.305 9.308 6.292 12.086 12.714 12.086c6.998 0 10.173-4.726 12.626-12.035c5.094-15.91 9.091-28.052 15.397-39.525c12.374-22.15 27.75-41.833 42.858-60.75c4.09-5.354 30.534-36.545 42.439-61.156c0 0 14.632-27.035 14.632-64.792c0-35.318-14.43-59.813-14.43-59.813l-41.545 11.126l-25.23 66.451l-6.242 9.163l-1.248 1.66l-1.66 2.078l-2.914 3.319l-4.164 4.163l-22.467 18.304l-56.17 32.432z"
+              />
+              <path
+                fill="#FBBC04"
+                d="M12.612 188.892c13.709 31.313 40.145 58.839 58.031 82.995l95.001-112.534s-13.384 17.504-37.662 17.504c-27.043 0-48.89-21.595-48.89-48.825c0-18.673 11.234-31.501 11.234-31.501l-64.489 17.28z"
+              />
+              <path
+                fill="#4285F4"
+                d="M166.705 5.787c31.552 10.173 58.558 31.53 74.893 63.023l-75.925 90.478s11.234-13.06 11.234-31.617c0-27.864-23.463-48.68-48.81-48.68c-23.969 0-37.735 17.475-37.735 17.475v-57z"
+              />
+              <path
+                fill="#1A73E8"
+                d="M30.015 45.765C48.86 23.218 82.02 0 127.736 0c22.18 0 38.89 5.823 38.89 5.823L90.29 96.516H36.205z"
+              />
+              <path
+                fill="#EA4335"
+                d="M12.612 188.892S0 164.194 0 128.414c0-33.817 13.146-63.377 30.015-82.649l60.318 50.759z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Enter location"
+              class="search-input"
+            />
+          </div>
+
+          <div class="search-input-group">
+            <i class="fas fa-bed icon-search"></i>
+            <select class="search-input">
+              <option>All Room Types</option>
+              <option>Single Room</option>
+              <option>Shared Room</option>
+              <option>Bachelor's Room</option>
+            </select>
+          </div>
+
+          <div class="price-slider-container">
+            <label for="price">Max: ₹29,000</label>
+            <input
+              type="range"
+              id="price"
+              min="10000"
+              max="50000"
+              value="29000"
+              class="price-slider"
+            />
+          </div>
+
+          <button class="search-btn">
+            <i class="fas fa-search"></i> Search Rooms
+          </button>
         </div>
+      </div>
     </section>
-    
+
     <section class="features-section">
-        <h2>Why Bachelor Life?</h2>
-        <p>We understand the bachelor journey - the independence, the growth, and the unique challenges you face</p>
-        <div class="feature-cards">
-            <div class="card">
-                <i class="fas fa-user-shield icon-large"></i>
-                <h3>Bachelor-Friendly Verified</h3>
-                <p>Every room is verified to welcome bachelors. No more rejections or hidden policies - just honest, transparent listings.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-search icon-large"></i>
-                <h3>Smart Discovery</h3>
-                <p>Find rooms that match your budget, location preferences, and lifestyle. Our filters really understand what bachelors need.</p>
-            </div>
-            <div class="card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/><animateTransform id="SVG3Jm2WHSS" fill="freeze" attributeName="transform" begin="0.6s;SVG3Jm2WHSS.begin+2.7s" dur="0.5s" type="rotate" values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12"/></path><path stroke-dasharray="4" stroke-dashoffset="4" d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72"><animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0s" dur="2.7s" keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65"><animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0.2s" dur="2.7s" keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6"/></path></g></svg>
-                <h3>Direct Connection</h3>
-                <p>Skip the middleman. Connect directly with owners who understand and welcome the bachelor lifestyle.</p>
-            </div>
+      <h2>Why Bachelor Life?</h2>
+      <p>
+        We understand the bachelor journey - the independence, the growth, and
+        the unique challenges you face
+      </p>
+      <div class="feature-cards">
+        <div class="card">
+          <i class="fas fa-user-shield icon-large"></i>
+          <h3>Bachelor-Friendly Verified</h3>
+          <p>
+            Every room is verified to welcome bachelors. No more rejections or
+            hidden policies - just honest, transparent listings.
+          </p>
         </div>
+        <div class="card">
+          <i class="fas fa-search icon-large"></i>
+          <h3>Smart Discovery</h3>
+          <p>
+            Find rooms that match your budget, location preferences, and
+            lifestyle. Our filters really understand what bachelors need.
+          </p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="52"
+            height="52"
+            viewBox="0 0 24 24"
+          ></svg>
+          <h3>Direct Connection</h3>
+          <p>
+            Skip the middleman. Connect directly with owners who understand and
+            welcome the bachelor lifestyle.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="advantage-section">
-        <div class="advantage-content">
-            <h2>The Bachelor Advantage</h2>
-            <p>Living independently isn't just about finding a room - it's about building your future, learning from experienced people, and growing into the person you want to become.</p>
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Bachelor-Friendly</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support Available</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Verified Rooms</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">95%</span>
-                    <span class="stat-label">Success Rate</span>
-                </div>
-            </div>
+      <div class="advantage-content">
+        <h2>The Bachelor Advantage</h2>
+        <p>
+          Living independently isn't just about finding a room - it's about
+          building your future, learning from experienced people, and growing
+          into the person you want to become.
+        </p>
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Bachelor-Friendly</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support Available</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Verified Rooms</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer>
-    <section class="cta-section">
+      <section class="cta-section">
         <h2>Ready to Start Your Journey?</h2>
-        <p>Join the community of independent bachelors who choose to live their life on their own terms.</p>
+        <p>
+          Join the community of independent bachelors who choose to live their
+          life on their own terms.
+        </p>
         <div class="cta-buttons">
-            <button class="btn-primary">Find My Room</button>
-            <button class="btn-secondary">List My Property</button>
+          <button class="btn-primary">Find My Room</button>
+          <button class="btn-secondary">List My Property</button>
         </div>
-    </section>
-
-         
+      </section>
     </footer>
-
-</body>
+  </body>
 </html>
