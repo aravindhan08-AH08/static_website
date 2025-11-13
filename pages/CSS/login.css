@@ -5,13 +5,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary-blue: #007bff;
+  --dark-blue: #045aaf;
+  --success-green: #4caf50;
+  --light-bg: #f8f9fa;
+  --white: #ffffff;
+  --text-dark: #333;
+  --text-light: #666;
+}
+
 body {
   background: linear-gradient(to bottom right, #f4f8ff, #e9f3ff);
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 
 nav {
   background-color: #153e90;
@@ -156,4 +165,17 @@ nav {
 
 .signup-text a:hover {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--primary-blue);
+  color: white;
+  margin-top: 331px;
+  animation: fadeInUp 1.2s ease-in both;
+}
+
+footer a:hover {
+  color: var(--success-green);
 }

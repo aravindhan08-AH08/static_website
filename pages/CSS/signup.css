@@ -1,3 +1,13 @@
+:root {
+  --primary-blue: #007bff;
+  --dark-blue: #045aaf;
+  --success-green: #4caf50;
+  --light-bg: #f8f9fa;
+  --white: #ffffff;
+  --text-dark: #333;
+  --text-light: #666;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -7,7 +17,6 @@ body {
   margin: 0;
   background: linear-gradient(to bottom right, #f5faff, #ecf6ff);
 }
-
 
 header {
   background-color: #1e3a8a;
@@ -50,7 +59,6 @@ nav a {
   font-weight: 500;
 }
 
-
 .container {
   display: flex;
   justify-content: center;
@@ -83,7 +91,6 @@ nav a {
   font-size: 14px;
   margin-bottom: 24px;
 }
-
 
 input {
   width: 100%;
@@ -125,4 +132,18 @@ input:focus {
   color: #2563eb;
   text-decoration: none;
   font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--primary-blue);
+  color: white;
+  margin-top: 331px;
+  animation: fadeInUp 1.2s ease-in both;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--success-green);
 }

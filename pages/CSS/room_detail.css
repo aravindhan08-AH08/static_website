@@ -1,0 +1,272 @@
+/* Basic Reset and Variables */
+:root {
+    --primary-blue: #007bff;
+    --dark-blue: #045aaf;
+    --success-green: #4CAF50;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header/Navbar */
+.navbar {
+    background-color: var(--primary-blue); /* A shade of blue/green for the header */
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.login-btn{
+    color: var(--white);
+    font-weight: 700;
+}
+
+.login-btn:hover{
+    color: var(--success-green);
+}
+
+/* Main Container */
+.container {
+    padding: 20px 50px;
+    max-width: 1200px; /* Limit max width for better readability */
+    margin: 0 auto;
+}
+
+.back-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    display: block; /* Takes up its own line */
+    margin-bottom: 20px;
+}
+
+/* Main Content Wrapper (Left and Right Columns) */
+.content-wrapper {
+    display: flex;
+    gap: 30px; /* Space between the two columns */
+    margin-bottom: 30px;
+}
+
+/* Left Column: Room Details */
+.room-details-section {
+    flex: 2; /* Takes up more space than the owner section */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room-image-placeholder {
+    height: 300px;
+    background-color: #dcdcdc; /* Gray placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.room-info {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.posted-date {
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+.address {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.nearby {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.consider-title {
+    color: #4CAF50; /* Highlighted text color */
+    margin-top: 20px;
+}
+
+.property-features {
+    display: flex;
+    gap: 50px; /* Space between the two lists */
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.property-features p {
+    margin: 5px 0;
+}
+
+/* Green Book Button */
+.book-button, .contact-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.book-button:hover, .contact-button:hover {
+    background-color: #45a049;
+}
+
+/* Availability Section */
+.availability {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.availability h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.availability-grid {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    font-size: 0.9em;
+}
+
+.availability-grid > div p {
+    margin: 3px 0;
+}
+
+
+/* Right Column: Room Owner */
+.room-owner-section {
+    flex: 1; /* Takes up less space */
+}
+
+.owner-title {
+    color: #333;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    margin-top: 0;
+}
+
+.owner-profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.owner-profile p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.phone-number {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 20px !important;
+}
+
+.contact-button {
+    margin-top: 0; /* Override the default margin */
+}
+
+/* Google Map Section */
+.google-map-section {
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px; /* Example height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #999;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--primary-blue);
+  color: white;
+  animation: fadeInUp 1.2s ease-in both;
+}
+
+footer a:hover{
+    color: var(--success-green);
+}
+
+/* Responsive adjustments (optional but good practice) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stacks columns vertically on smaller screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar nav a {
+        margin: 5px 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}

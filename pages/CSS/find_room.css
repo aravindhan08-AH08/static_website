@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-blue: #007bff;
+    --dark-blue: #045aaf;
+    --success-green: #4CAF50;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f7fa; 
@@ -270,7 +280,7 @@ a {
 
 .room-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 75px;
   justify-items: center;
 }
@@ -331,4 +341,16 @@ a {
   font-size: 13px;
   color: #555;
   margin-right: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--primary-blue);
+  color: white;
+  animation: fadeInUp 1.2s ease-in both;
+}
+
+footer a:hover{
+    color: var(--success-green);
 }
