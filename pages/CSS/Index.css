@@ -367,7 +367,6 @@ footer {
   padding: 15px;
   background: var(--primary-blue);
   color: white;
-  margin-top: 331px;
   animation: fadeInUp 1.2s ease-in both;
 }
 

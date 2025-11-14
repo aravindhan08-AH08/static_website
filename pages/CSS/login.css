@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-  background-color: #153e90;
+  background-color: var(--primary-blue);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -36,14 +36,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.logo-icon {
-  background-color: white;
-  color: #153e90;
-  font-weight: bold;
-  border-radius: 5px;
-  padding: 4px 8px;
 }
 
 .logo h2 {
@@ -63,14 +55,16 @@ nav {
   background-color: var(--success-green);
 }
 
-.nav-links .login-btn {
-  background-color: #2563eb;
+.login-btn {
+  background-color: var(--primary-blue);
   padding: 8px 16px;
   border-radius: 5px;
+  text-decoration: none;
+  font-weight: 650;
   color: white;
 }
 
-.nav-links .login-btn:hover {
+.login-btn:hover {
   background-color: #1e4ed8;
 }
 
@@ -136,7 +130,7 @@ nav {
 
 .btn {
   width: 100%;
-  background-color: #2563eb;
+  background-color: var(--primary-blue);
   border: none;
   color: white;
   padding: 10px;
@@ -172,8 +166,12 @@ footer {
   padding: 15px;
   background: var(--primary-blue);
   color: white;
-  margin-top: 331px;
   animation: fadeInUp 1.2s ease-in both;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 footer a:hover {

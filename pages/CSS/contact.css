@@ -1,12 +1,11 @@
-/* ---------- BASIC LAYOUT ---------- */
 :root {
-    --primary-blue: #007bff;
-    --dark-blue: #045aaf;
-    --success-green: #4CAF50;
-    --light-bg: #f8f9fa;
-    --white: #ffffff;
-    --text-dark: #333;
-    --text-light: #666;
+  --primary-blue: #007bff;
+  --dark-blue: #045aaf;
+  --success-green: #4caf50;
+  --light-bg: #f8f9fa;
+  --white: #ffffff;
+  --text-dark: #333;
+  --text-light: #666;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
   color: #333;
 }
 
-/* ---------- HEADER ---------- */
 header {
   background: #008cff;
   color: white;
@@ -34,17 +32,17 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* ---------- CONTACT SECTION ---------- */
+
 .contact {
   padding: 30px;
   max-width: 800px;
   margin: 40px auto;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 1s ease-out both;
 }
 
@@ -60,7 +58,7 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
-/* ---------- CONTACT FORM ---------- */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -103,7 +101,7 @@ button:hover {
   background: #006fd1;
 }
 
-/* ---------- CONTACT INFO ---------- */
+
 .contact-info {
   margin-top: 25px;
   text-align: center;
@@ -120,21 +118,19 @@ button:hover {
   text-decoration: underline;
 }
 
-/* ---------- FOOTER ---------- */
 footer {
   text-align: center;
   padding: 15px;
   background: var(--primary-blue);
   color: white;
-  margin-top: 331px;
   animation: fadeInUp 1.2s ease-in both;
 }
 
-footer a:hover{
-    color: var(--success-green);
+footer a:hover {
+  color: var(--success-green);
 }
 
-/* ---------- ANIMATIONS ---------- */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;

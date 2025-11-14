@@ -21,10 +21,10 @@ body {
   color: var(--text-dark);
 }
 
-/* Navbar */
+
 .navbar {
-  background: linear-gradient(90deg, var(--primary-blue), var(--success-green));
-  padding: 15px 50px;
+  background: var(--primary-blue);
+  padding: 20px 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,15 +41,15 @@ body {
   margin: 0 15px;
   transition: 0.3s;
 }
-.nav-links a:hover,
-.active-link {
-  text-decoration: underline;
+.nav-links a:hover {
+  color: var(--success-green);
 }
 .login-btn {
   background: var(--white);
   color: var(--primary-blue);
   padding: 8px 20px;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -58,7 +58,7 @@ body {
   color: var(--white);
 }
 
-/* Form Container */
+
 .post-room-container {
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@ body {
   overflow: hidden;
 }
 
-/* Header */
+
 .form-header {
   background: linear-gradient(135deg, var(--primary-blue), var(--success-green));
   color: var(--white);
@@ -88,7 +88,7 @@ body {
   opacity: 0.9;
 }
 
-/* Form */
+
 .post-form {
   padding: 35px;
 }
@@ -136,7 +136,7 @@ textarea {
   resize: vertical;
 }
 
-/* Amenities */
+
 .amenities-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -144,7 +144,7 @@ textarea {
   color: var(--text-light);
 }
 
-/* Bachelor Friendly */
+
 .bachelor-friendly-check {
   border: 1px solid var(--success-green);
   background: rgba(0, 194, 111, 0.05);
@@ -153,7 +153,7 @@ textarea {
   margin: 25px 0;
 }
 
-/* Buttons */
+
 .form-actions {
   display: flex;
   justify-content: flex-end;
@@ -188,16 +188,21 @@ textarea {
   transform: translateY(-1px);
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 15px;
   background: var(--primary-blue);
   color: white;
-  margin-top: 331px;
   animation: fadeInUp 1.2s ease-in both;
 }
 
+footer a{
+  color: var(--white);
+  text-decoration:none ;
+}
+
 footer a:hover{
+  text-decoration: none;
     color: var(--success-green);
 }

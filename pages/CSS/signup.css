@@ -19,12 +19,12 @@ body {
 }
 
 header {
-  background-color: #1e3a8a;
-  color: #fff;
+  background-color: var(--primary-blue);
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 60px;
+  padding: 15px 60px;
 }
 
 .logo {
@@ -34,15 +34,6 @@ header {
   font-size: 20px;
 }
 
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  background: #22c55e;
-  border-radius: 6px;
-  display: inline-block;
-  margin-right: 8px;
-}
-
 nav a {
   color: #fff;
   text-decoration: none;
@@ -50,20 +41,29 @@ nav a {
   font-weight: 500;
 }
 
+nav a:hover{
+  color: var(--success-green);
+}
+
 .login-btn {
-  background: #2563eb;
+  background-color: var(--white);
   padding: 8px 16px;
   border-radius: 8px;
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: var(--primary-blue);
+  font-weight: 650;
+}
+
+.login-btn:hover{
+  color: var(--white);
+  background-color: var(--success-green);
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 70px);
+  height: calc(90vh - 70px);
 }
 
 .form-card {
@@ -115,7 +115,6 @@ input:focus {
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .btn-create:hover {
@@ -139,8 +138,12 @@ footer {
   padding: 15px;
   background: var(--primary-blue);
   color: white;
-  margin-top: 331px;
   animation: fadeInUp 1.2s ease-in both;
+}
+
+footer a{
+  color: var(--white);
+  text-decoration: none;
 }
 
 footer a:hover {
